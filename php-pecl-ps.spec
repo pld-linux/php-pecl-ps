@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 ps is an extension similar to the pdf extension but for creating
-PostScript files. Its api is modelled after the pdf extension.
+PostScript files. Its API is modelled after the pdf extension.
 
 In PECL status of this package is: %{_status}.
 
 %description -l pl
 ps jest rozszerzeniem podobnym do pdf ale s³u¿±cym do tworzenia plików
-PostScript. Api jest wzorowany na rozszerzeniu pdf.
+PostScript. API jest wzorowane na rozszerzeniu pdf.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
