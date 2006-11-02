@@ -13,7 +13,7 @@ Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	f70d7ae14155c3f4ee9fd0a18b0337d3
 URL:		http://pecl.php.net/package/ps/
 BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.254
+BuildRequires:	rpmbuild(macros) >= 1.322
 BuildRequires:	pslib-devel
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
