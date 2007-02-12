@@ -1,7 +1,7 @@
 %define		_modname	ps
 %define		_status		stable
 Summary:	%{_modname} - an extension to create PostScript files
-Summary(pl):	%{_modname} - rozszerzenie do tworzenia plików PostScript
+Summary(pl.UTF-8):   %{_modname} - rozszerzenie do tworzenia plikÃ³w PostScript
 Name:		php-pecl-%{_modname}
 Version:	1.3.4
 Release:	1
@@ -24,8 +24,8 @@ PostScript files. Its API is modelled after the pdf extension.
 
 In PECL status of this package is: %{_status}.
 
-%description -l pl
-ps jest rozszerzeniem podobnym do pdf ale s³u¿±cym do tworzenia plików
+%description -l pl.UTF-8
+ps jest rozszerzeniem podobnym do pdf ale sÅ‚uÅ¼Ä…cym do tworzenia plikÃ³w
 PostScript. API jest wzorowane na rozszerzeniu pdf.
 
 To rozszerzenie ma w PECL status: %{_status}.
