@@ -4,7 +4,7 @@ Summary:	%{_modname} - an extension to create PostScript files
 Summary(pl.UTF-8):	%{_modname} - rozszerzenie do tworzenia plików PostScript
 Name:		php-pecl-%{_modname}
 Version:	1.3.6
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
