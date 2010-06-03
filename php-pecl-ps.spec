@@ -1,5 +1,5 @@
 %define		modname	ps
-%define		status		stable
+%define		status	stable
 Summary:	%{modname} - an extension to create PostScript files
 Summary(pl.UTF-8):	%{modname} - rozszerzenie do tworzenia plików PostScript
 Name:		php-pecl-%{modname}
@@ -10,12 +10,10 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	256c5cc3877b03b67963896b84fef306
 URL:		http://pecl.php.net/package/ps/
-BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.344
+BuildRequires:	php-devel >= 4:5.0.4
 BuildRequires:	pslib-devel
+BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
-Obsoletes:	php-pear-%{modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,7 +29,7 @@ PostScript. API jest wzorowane na rozszerzeniu pdf.
 To rozszerzenie ma w PECL status: %{status}.
 
 %prep
-%setup -q -c
+%setup -qc
 mv %{modname}-%{version}/* .
 
 %build
