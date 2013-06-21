@@ -1,8 +1,9 @@
+%define		php_name	php%{?php_suffix}
 %define		modname	ps
 %define		status	stable
 Summary:	%{modname} - an extension to create PostScript files
 Summary(pl.UTF-8):	%{modname} - rozszerzenie do tworzenia plików PostScript
-Name:		php-pecl-%{modname}
+Name:		%{php_name}-pecl-%{modname}
 Version:	1.3.6
 Release:	7
 License:	PHP 3.01
@@ -10,9 +11,9 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	256c5cc3877b03b67963896b84fef306
 URL:		http://pecl.php.net/package/ps/
-BuildRequires:	php-devel >= 4:5.0.4
+BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	pslib-devel
-BuildRequires:	rpmbuild(macros) >= 1.344
+BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
