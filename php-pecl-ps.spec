@@ -4,7 +4,7 @@ Summary:	%{modname} - an extension to create PostScript files
 Summary(pl.UTF-8):	%{modname} - rozszerzenie do tworzenia plików PostScript
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.3.7
-Release:	3
+Release:	4
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -15,6 +15,7 @@ BuildRequires:	pslib-devel
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Provides:	php(%{modname}) = %{version}
+Obsoletes:	php-pecl-ps < 1.3.7-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
